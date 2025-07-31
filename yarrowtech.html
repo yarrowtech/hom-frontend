@@ -4,384 +4,282 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
+<meta name="Description" content="YarrowTech - Professional Technology Solutions"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>yarrowtech</title>
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+<title>YarrowTech | Professional Solutions</title>
 <style>
-        html {
-            scroll-padding-top: 100px;
-            /* Offset scroll position to leave space for fixed navbar */
-        }
-
-        body {
-            scroll-behavior: smooth;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #2b2b2b;
-        }
-
-        #bg-video {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-            object-fit: cover;
-            filter: brightness(0.7) saturate(1.2);
-        }
-
-        
-        .nav_bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 5vw;
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            margin-bottom: 80vh;
-        }
-
-        .logo h3 {
-            color: #ffffff;
-            font-weight: 900;
-            font-size: 2rem;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-            font-family: "Roboto Slab", serif;
-            font-optical-sizing: auto;
-
-            font-style: normal;
-        }
-
-        .nav_items a {
-            color: #fff;
-            margin-left: 25px;
-            font-weight: 700;
-            font-size: 1.2rem;
-            text-decoration: none;
-            position: relative;
-            transition: color 0.4s;
-
-            font-size: 1rem;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-
-            font-family: "Roboto Slab", serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-        }
-
-        .nav_items a::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 0%;
-            height: 3px;
-            background: linear-gradient(to right, #00b4db, #0083b0);
-            transition: width 0.3s ease;
-            border-radius: 5px;
-        }
-
-        .nav_items a:hover {
-            color: #ffecf0;
-        }
-
-        .nav_items a:hover::after {
-            width: 100%;
-        }
-
-
-          .services {
-            background: rgba(255, 255, 255, 0.18);
-            backdrop-filter: blur(12px);
-            width: 98%;
-            padding: 10px;
-            margin-top: 30vh;
-            margin-bottom: 10vh;
-            padding-bottom: 10vh;
-            margin-left: 1vw;
-            margin-right: 1vw;
-            border-radius: 15px;
-            color: white;
-            text-align: center;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .services:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
-        }
-
-        .services h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-            margin-bottom: 30px;
-            font-family: "Roboto Slab", serif;
-            font-style: normal;
-        }
-
-        /* Horizontal Scroll Area */
-        .marquee-wrapper {
-            overflow-x: auto;
-            overflow-y: hidden;
-            white-space: nowrap;
-            scroll-behavior: smooth;
-            padding: 10px;
-            -ms-overflow-style: none;
-            /* Hide scrollbar in IE/Edge */
-            scrollbar-width: none;
-            /* Hide scrollbar in Firefox */
-
-        }
-
-        .marquee-wrapper::-webkit-scrollbar {
+    html {
+        scroll-padding-top: 100px;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background: linear-gradient(135deg, #f8fafc 60%, #e3e9f7 100%);
+        /* Soft background color */
+        line-height: 1.6;
+        min-height: 100vh;
+    }
+    
+    .nav_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5vw;
+        background: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .logo h3 {
+        color: #2c3e50;
+        font-weight: 700;
+        font-size: 1.8rem;
+        font-family: "Roboto Slab", serif;
+        margin: 0;
+    }
+    
+    .nav_items a {
+        color: #2c3e50;
+        margin-left: 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s;
+    }
+    
+    .nav_items a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background: #3498db;
+        transition: width 0.3s ease;
+    }
+    
+    .nav_items a:hover {
+        color: #3498db;
+    }
+    
+    .nav_items a:hover::after {
+        width: 100%;
+    }
+    
+    .services {
+        background: #fff;
+        width: 90%;
+        max-width: 1200px;
+        padding: 40px;
+        margin: 120px auto 60px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        text-align: center;
+    }
+    
+    .services h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 40px;
+        font-family: "Roboto Slab", serif;
+        position: relative;
+        padding-bottom: 15px;
+    }
+    
+    .services h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: #3498db;
+    }
+    
+    .project-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .project-card {
+        background: #fff;
+        border-radius: 8px;
+        padding: 30px;
+        color: #333;
+        width: 100%;
+        max-width: 350px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: 1px solid #eaeaea;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        border-color: #3498db;
+    }
+    
+    .project-card h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-family: "Roboto Slab", serif;
+    }
+    
+    .project-card p {
+        color: #7f8c8d;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .work-progress {
+        display: inline-block;
+        background: #f39c12;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    
+    footer {
+        background: #2c3e50;
+        padding: 40px 5vw;
+        color: #fff;
+        text-align: center;
+        margin-top: 80px;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
+    footer .social-media-links {
+        margin: 20px 0;
+    }
+    
+    footer .social-media-links a {
+        color: #ecf0f1;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+        font-size: 1rem;
+    }
+    
+    footer .social-media-links a:hover {
+        color: #3498db;
+    }
+    
+    .copyright {
+        color: #bdc3c7;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .nav_items {
             display: none;
-            /* Hide scrollbar in Chrome/Safari */
         }
-
-        /* Flex items inside scroll container */
-        .marquee-track {
-            display: inline-flex;
-            gap: 20px;
-            width: max-content;
-            /* Removed animation for manual scroll */
+        
+        .services {
+            padding: 30px 20px;
+            width: 95%;
+            margin-top: 80px;
         }
-
-        /* Item Card */
-        .item1 {
-            flex: 0 0 auto;
-            width: 300px;
-            background-color: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            color: white;
-            overflow: hidden;
-            position: relative;
-            transition: transform 0.3s ease;
+        
+        .services h1 {
+            font-size: 2rem;
         }
-
-        /* Image Styling */
-        .item_img1 {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            border-radius: 10px 10px 0 0;
-            transition: transform 0.3s ease;
+        
+        .project-card {
+            max-width: 100%;
         }
-
-        /* Hover effect on image */
-        .item_img1:hover {
-            transform: scale(1.03);
-        }
-
-        /* Button hidden by default */
-        .btn1 {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80%;
-            height: 40px;
-            background: linear-gradient(135deg, #0055ff, #465ec1, #687bc3);
-            border-radius: 15px;
-            box-shadow: #0083b0;
-            font-weight: bold;
-            cursor: pointer;
-            color: white;
-            font-family: "Roboto Slab", serif;
-            border-radius: 15px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
-            /* Prevent click unless shown */
-            z-index: 10;
-        }
-
-
-
-
-
-
-
-
-
-
-        /* Show button on hover */
-        .item1:hover .btn1 {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .btn1:hover {
-            background: linear-gradient(135deg, #0055ff, #3355de, #415fc8);
-        }
-
-                /* Footer Section */
-        footer {
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            padding: 20px 5vw;
-            color: white;
-            text-align: center;
-            margin-top: 20vh;
-        }
-
-        footer .social-media-links a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        footer .social-media-links a:hover {
-            color: #f7cfcf;
-        }
-
-        p {
-            font-family: "Roboto Slab", serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-        }
-
-
+    }
 </style>
-
+</head>
 <body>
-
-
-     <div class="content">
-        <video autoplay muted loop id="bg-video">
-            <source src="background3.mp4" type="video/mp4" />
-            Your browser does not support HTML5 video.
-        </video>
-
-
-                <!-- Navigation -->
+    <div class="content">
+        <!-- Navigation -->
         <div class="nav_bar">
             <div class="logo">
-                <h3>House of Mausa</h3>
+                <h3>YarrowTech</h3>
             </div>
             <div class="nav_items">
-                <a href="next.html#home">Home</a>
-                <a href="next.html#services">Project</a>
-                <a href="next.html#about">About</a>
-                <a href="next.html#contact">Contact</a>
-
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
 
-
-
-                <div id="yarrowtech" class="services">
-            <h1>yarrowtech Projects</h1>
-            <div class="marquee-wrapper">
-                <div class="marquee-track" id="marquee-track">
-                    <!-- Original Items -->
-                    <div class="item1">
-                        <img src="mall2.jpg" alt="img" class="item_img1">
-                        <button class="btn1">
-                            <a href="yarrowtech.html" target="_blank"
-                                style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">F&B</a>
-                        </button>
-                    </div>
-
-                    <div class="item1">
-                        <img src="mall1.jpg" alt="img" class="item_img1">
-                        <button class="btn1">
-                            <a href="https://www.google.com/" target="_blank"
-                                style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">Farming(A.G.G.)</a>
-                        </button>
-                    </div>
-
-                    <div class="item1">
-                        <img src="mall3.jpg" alt="img" class="item_img1">
-                        <button class="btn1">
-                            <a href="https://www.google.com/" target="_blank"
-                                style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">click me!</a>
-                        </button>
-                    </div>
-
-                    <div class="item1">
-                        <img src="mall1.jpg" alt="img" class="item_img1">
-                        <button class="btn1">
-                            <a href="https://www.google.com/" target="_blank"
-                                style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">click me!</a>
-                        </button>
-                    </div>
-
-
-                    <div class="item1">
-                        <img src="mall2.jpg" alt="img" class="item_img1">
-                        <button class="btn1">
-                            <a href="https://www.google.com/" target="_blank"
-                                style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">click me!</a>
-                        </button>
-                    </div>
-
-                    <div class="item1">
-                        <img src="mall3.jpg" alt="img" class="item_img1">
-                        <button class="btn1">
-                            <a href="https://www.google.com/" target="_blank"
-                                style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">click me!</a>
-                        </button>
-                    </div>
-
-                    <!-- Duplicate Items for Seamless Scroll -->
-                    <div class="item1">
-                        <img src="mall2.jpg" alt="img" class="item_img1">
-                        <button class="btn1">
-                            <a href="https://www.google.com/" target="_blank"
-                                style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">click me!</a>
-                        </button>
-                    </div>
-
-
-
+        <div id="services" class="services">
+            <h1>Our Technology Solutions</h1>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h2>EEC</h2>
+                    <p>Electronic Educare, AI powerd Learnign Management System</p>
+                    <div class="work-progress">In Development</div>
                 </div>
-
-
+                <div class="project-card">
+                    <h2>EHC</h2>
+                    <p>Innovative technology solutions for modern healthcare challenges.</p>
+                    <div class="work-progress">In Development</div>
+                </div>
+                <div class="project-card">
+                    <h2>RMS</h2>
+                    <p>Efficient systems for optimal Retial Management Systems.</p>
+                    <div class="work-progress">In Development</div>
+                </div>
+                <div class="project-card">
+                    <h2>F&B</h2>
+                    <p>Cutting-edge innovations for the food and beverage industry.</p>
+                    <div class="work-progress">In Development</div>
+                </div>
+                <div class="project-card">
+                    <h2>Smart Farming(AGG)</h2>
+                    <p>Smart solutions for modern farming and agricultural management.</p>
+                    <div class="work-progress">In Development</div>
+                </div>
+                <div class="project-card">
+                    <h2>SportsBit</h2>
+                    <p>Integrated platform for sports analytics and fan engagement.</p>
+                    <div class="work-progress">In Development</div>
+                </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
 
         <!-- Footer Section -->
-
         <footer>
-            <p>&copy; 2025 House of Mausa. All rights reserved.</p>
             <div class="social-media-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
             </div>
-            <p style="margin-top: 10px;">Designed by YourName</p>
+            <p>Innovating for the future with cutting-edge technology solutions</p>
+            <p class="copyright">&copy; 2023 YarrowTech. All rights reserved.</p>
         </footer>
-
-
-
-
-
-
     </div>
-
-
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

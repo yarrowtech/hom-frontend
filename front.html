@@ -35,6 +35,7 @@
             cursor: pointer;
             overflow-x: hidden;
             line-height: 1.6;
+            overflow-y: auto;
         }
 
         p {
@@ -178,12 +179,10 @@
         /* NEXT PAGE STYLES */
         #next-page {
             display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
+            position: relative;
             width: 100%;
-            height: 100%;
-            overflow-y: auto;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
 
         #bg-video {
@@ -255,7 +254,7 @@
         }
 
         .my_container {
-            margin-bottom: 80vh;
+            margin-bottom: 50px;
         }
 
         #home {
@@ -263,8 +262,8 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            padding: 100px 5vw 60px;
+            min-height: 80vh;
+            padding: 120px 5vw 60px;
             
         }
 
@@ -368,11 +367,11 @@
 
         #about {
             padding-top: 10px;
-            margin-top: 90vh;
-            margin-bottom: 80vh;
+            margin-top: 50px;
+            margin-bottom: 50px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            scroll-margin-top: 15vh;
+            scroll-margin-top: 100px;
         }
 
         #about:hover {
@@ -544,8 +543,8 @@
             font-family: "Roboto Slab", serif;
             font-optical-sizing: auto;
             font-style: normal;
-            scroll-margin-top: 15vh;
-            margin-top: 20vh;
+            scroll-margin-top: 100px;
+            margin-top: 50px;
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
             transition: all 0.4s ease;
         }
